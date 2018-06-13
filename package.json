@@ -1,5 +1,5 @@
 {
-  "name": "vue-waterfall",
+  "name": "vue-waterfall-component",
   "description": "A Vue waterfall component using lazy loading",
   "keywords": [
     "vue",
