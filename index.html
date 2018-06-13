@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="dist/vue-waterfall.min.js"></script>
+
+    <title>Vue Waterfall Demos</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="demo1">
+        <waterfall
+          :url.sync="imgURL"
+          align="row"
+          :line-num="5">
+        </waterfall>
+      </div>
+    </div>
+
+    <script>
+      const handleRes = (list) => {
+        // process the data => grid data
+        const ROW_ITEMS = 6;
+        const grid = [];
+
+        for (let i = 0; i < list.length; i += ROW_ITEMS) {
+          // 切片
+          grid.push(list.slice(i, i + ROW_ITEMS))
+        }
+        return grid
+      };
+
+
+      const param = `?albumId=1&pageSize=6`;
+
+      new Vue({
+        el: '#app',
+        data: { // must be a property in Vue constructor
+          imgCall: {
+            url: `https://jsonplaceholder.typicode.com/photos${param}`,
+            callback: handleRes
+          },
+          imgURL: 'https://jsonplaceholder.typicode.com/photos?albumId=1'
+        }
+      })
+    </script>
+  </body>
+</html>
