@@ -11,7 +11,7 @@
   "version": "1.0.1",
   "author": "21hook <2765049749@qq.com>",
   "license": "MIT",
-  "repository": "github:21hook/vue-watefall",
+  "repository": "github:21hook/vue-waterfall",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
