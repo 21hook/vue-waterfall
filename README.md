@@ -42,8 +42,7 @@ npm run build
 ## Props 
   name | type | default | description
   -----| -----| ------- | -----------
-   url |  String | - | required, URL to get the list of the image details, with a url parameter
-   https://host/path?:listNo=1  to get the next list
+   url |  String | - | required, URL to get the list of the image details, with a url parameter https://host/path?:listNo=1 to get the next list
   align | String | 'row' | 'row'' or 'col', grid alignment
   lineNum | Number | 6 | integer from 0 to 24  the number of grids in a row or column                           
 
