@@ -1,4 +1,4 @@
-# vue-waterfallvue
+# vue-waterfall
 
 > A Vue waterfall component using lazy loading
 
