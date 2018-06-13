@@ -8,7 +8,7 @@
   ],
   "main": "dist/vue-waterfall.min.js",
   "unpkg": "dist/vue-waterfall.min.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "21hook <2765049749@qq.com>",
   "license": "MIT",
   "repository": "github:21hook/vue-watefall",
